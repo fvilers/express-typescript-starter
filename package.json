@@ -1,0 +1,23 @@
+{
+  "name": "express-typescript-starter",
+  "version": "0.0.0",
+  "description": "A starter project to use ExpressJS with TypeScript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fvilers/express-typescript-starter.git"
+  },
+  "keywords": [
+    "express",
+    "starter",
+    "typescript"
+  ],
+  "author": "Fabian Vilers <fabian.vilers@dev-one.com> (https://www.dev-one.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fvilers/express-typescript-starter/issues"
+  },
+  "homepage": "https://github.com/fvilers/express-typescript-starter#readme"
+}
