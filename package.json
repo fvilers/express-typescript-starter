@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/fvilers/express-typescript-starter#readme",
   "dependencies": {
+    "@fvilers/simple-logger": "2.0.1",
     "body-parser": "1.18.3",
     "compression": "1.7.3",
     "debug": "4.1.1",

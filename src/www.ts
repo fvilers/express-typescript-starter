@@ -1,5 +1,6 @@
 import debug from 'debug';
 import http from 'http';
+import logger from '@fvilers/simple-logger';
 import { app } from './app';
 import { normalizePort } from './helpers';
 
@@ -20,11 +21,11 @@ function onError(error: NodeJS.ErrnoException) {
 
   switch (error.code) {
     case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
+      logger.error(`${bind} requires elevated privileges`);
       process.exit(1);
       break;
     case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+      logger.error(`${bind} is already in use`);
       process.exit(1);
       break;
     default:
