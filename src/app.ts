@@ -16,6 +16,7 @@ app.use(compression());
 app.use(helmet());
 app.use(bodyParser.urlencoded(configuration.bodyParsers.urlencoded));
 app.use(logger(configuration.logger.format, configuration.logger.options));
+app.use(express.static(configuration.paths.public, configuration.static));
 app.use('/', routes());
 app.use('*', notFound());
 app.use(errorHandler());
