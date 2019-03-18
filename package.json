@@ -26,7 +26,8 @@
   "homepage": "https://github.com/fvilers/express-typescript-starter#readme",
   "dependencies": {
     "debug": "4.1.1",
-    "express": "4.16.4"
+    "express": "4.16.4",
+    "hbs": "4.0.3"
   },
   "devDependencies": {
     "@types/debug": "4.1.2",
