@@ -9,6 +9,8 @@ import { notFound, errorHandler } from './middlewares';
 
 export const app = express();
 app.set('namespace', 'express-typescript-starter:server');
+
+// Remove next 2 lines to disable the view engine
 app.set('views', configuration.paths.views);
 app.set('view engine', 'hbs');
 
