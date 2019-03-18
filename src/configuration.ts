@@ -6,10 +6,8 @@ export interface Configuration {
   };
 }
 
-const configuration = Object.freeze({
+export const configuration = Object.freeze({
   paths: {
     views: path.join(__dirname, '..', 'views')
   }
 });
-
-export default configuration;

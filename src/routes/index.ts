@@ -1,11 +1,9 @@
-import express from 'express';
-import home from './home';
+import express, { RequestHandler } from 'express';
+import { home } from './home';
 
 const router = express.Router();
 router.get('/', home());
 
-function handler() {
+export function routes(): RequestHandler {
   return router;
 }
-
-export default handler;
