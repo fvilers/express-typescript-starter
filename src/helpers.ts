@@ -11,3 +11,7 @@ export function normalizePort(val: string): string | number | boolean {
 
   return false;
 }
+
+export function isProd(): boolean {
+  return process.env.NODE_ENV === 'production';
+}
