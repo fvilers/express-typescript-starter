@@ -1,4 +1,3 @@
-import debug from 'debug';
 import http from 'http';
 import logger from '@fvilers/simple-logger';
 import { app } from './app';
@@ -37,5 +36,5 @@ function onListening() {
   const addr = server.address();
   const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
 
-  debug(app.get('namespace'))(`Listening on ${bind}`);
+  logger.log(`Listening on ${bind}`);
 }
