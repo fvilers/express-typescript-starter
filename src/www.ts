@@ -1,29 +1,29 @@
-import http from 'http';
-import logger from '@fvilers/simple-logger';
-import { app } from './app';
-import { normalizePort } from './helpers';
+import logger from "@fvilers/simple-logger";
+import http from "http";
+import { app } from "./app";
+import { normalizePort } from "./helpers";
 
-const port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+const port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
 
 const server = http.createServer(app);
 server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+server.on("error", onError);
+server.on("listening", onListening);
 
 function onError(error: NodeJS.ErrnoException) {
-  if (error.syscall !== 'listen') {
+  if (error.syscall !== "listen") {
     throw error;
   }
 
-  const bind = typeof port === 'string' ? `Pipe ${port}` : `Port ${port}`;
+  const bind = typeof port === "string" ? `Pipe ${port}` : `Port ${port}`;
 
   switch (error.code) {
-    case 'EACCES':
+    case "EACCES":
       logger.error(`${bind} requires elevated privileges`);
       process.exit(1);
       break;
-    case 'EADDRINUSE':
+    case "EADDRINUSE":
       logger.error(`${bind} is already in use`);
       process.exit(1);
       break;
@@ -34,7 +34,7 @@ function onError(error: NodeJS.ErrnoException) {
 
 function onListening() {
   const addr = server.address();
-  const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
+  const bind = typeof addr === "string" ? `pipe ${addr}` : `port ${addr?.port}`;
 
   logger.log(`Listening on ${bind}`);
 }
