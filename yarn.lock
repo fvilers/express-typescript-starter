@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@fvilers/is-prod@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@fvilers/is-prod/-/is-prod-1.0.1.tgz#13eea1dc92ba6c4ffdc6f383c07b06a6d0b7aea4"
+  integrity sha512-SF8xXdH1f7cBCeyXjvi1arbSH3/8x/iieh3cc0kukCyL1YVLRMaC2Nse1FX3VQmcCUueyKbtfIx+PQx5nR7DfQ==
+
 "@fvilers/simple-logger@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@fvilers/simple-logger/-/simple-logger-3.0.0.tgz#0fc222a75daacd175e5bad9e4b4aa3684604aed9"
