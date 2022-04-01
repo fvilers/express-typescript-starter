@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@fvilers/is-prod/-/is-prod-1.0.1.tgz#13eea1dc92ba6c4ffdc6f383c07b06a6d0b7aea4"
   integrity sha512-SF8xXdH1f7cBCeyXjvi1arbSH3/8x/iieh3cc0kukCyL1YVLRMaC2Nse1FX3VQmcCUueyKbtfIx+PQx5nR7DfQ==
 
+"@fvilers/normalize-port@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@fvilers/normalize-port/-/normalize-port-1.0.0.tgz#411ab781f8beb5659172ff0a80d45ce860df8563"
+  integrity sha512-rrSRhuJOmX5sHNrG5iHz27W16ghy7uR3GnUCGZE5j7c+OHQJnBGLeVROz7scNCFeuENRxyriL5rApzhzwZ2Elw==
+
 "@fvilers/simple-logger@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@fvilers/simple-logger/-/simple-logger-3.0.0.tgz#0fc222a75daacd175e5bad9e4b4aa3684604aed9"

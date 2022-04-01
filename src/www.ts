@@ -1,7 +1,7 @@
+import normalizePort from "@fvilers/normalize-port";
 import logger from "@fvilers/simple-logger";
 import http from "http";
 import { app } from "./app";
-import { normalizePort } from "./helpers";
 
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
